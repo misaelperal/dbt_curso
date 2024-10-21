@@ -1,0 +1,79 @@
+version: 2
+
+sources:
+  - name: mperal
+    description: ""
+    tables:
+      - name: budget
+        description: ""
+        columns:
+          - name: _row
+            data_type: number
+            description: ""
+          - name: product_id
+            data_type: number
+            description: ""
+          - name: quantity
+            data_type: number
+            description: ""
+          - name: month
+            data_type: date
+            description: ""
+          - name: _fivetran_synced
+            data_type: timestamp_tz
+            description: ""
+
+      - name: my_first_dbt_model
+        description: ""
+        columns:
+          - name: id
+            data_type: number
+            description: ""
+
+      - name: my_second_dbt_model
+        description: ""
+        columns:
+          - name: id
+            data_type: number
+            description: ""
+
+      - name: personas
+        description: ""
+        columns:
+          - name: name
+            data_type: varchar
+            description: ""
+          - name: year
+            data_type: varchar
+            description: ""
+          - name: income
+            data_type: varchar
+            description: ""
+          - name: education
+            data_type: varchar
+            description: ""
+          - name: graduation
+            data_type: number
+            description: ""
+          - name: standing
+            data_type: varchar
+            description: ""
+
+      - name: stg_mperal_renamed_casted
+        description: ""
+        columns:
+          - name: _row
+            data_type: number
+            description: ""
+          - name: product_id
+            data_type: number
+            description: ""
+          - name: quantity
+            data_type: number
+            description: ""
+          - name: month
+            data_type: date
+            description: ""
+          - name: date_load
+            data_type: timestamp_tz
+            description: ""
